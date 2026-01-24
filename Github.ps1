@@ -4,4 +4,4 @@
 
 git add .
 git commit -m "Añadiendo mejoras y componentes"
-git push origin master
+git push origin main
