@@ -3,7 +3,7 @@ from rxconfig import config
 
 def navbar() -> rx.Component:
     
-    return rx.vstack(
+    return rx.vstack (
         
                     rx.hstack(
                             
