@@ -1,1 +1,0 @@
-var e={PING:`https://mi-web-93ls.onrender.com./ping`,EVENT:`wss://mi-web-93ls.onrender.com./_event`,UPLOAD:`https://mi-web-93ls.onrender.com./_upload`,AUTH_CODESPACE:`https://mi-web-93ls.onrender.com./auth-codespace`,HEALTH:`https://mi-web-93ls.onrender.com./_health`,ALL_ROUTES:`https://mi-web-93ls.onrender.com./_all_routes`,TRANSPORT:`websocket`,TEST_MODE:!1};export{e as t};
