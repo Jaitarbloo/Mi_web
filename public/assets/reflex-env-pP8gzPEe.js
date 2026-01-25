@@ -1,1 +1,0 @@
-var e={PING:`https://dominio.onrender.com/ping`,EVENT:`wss://dominio.onrender.com/_event`,UPLOAD:`https://dominio.onrender.com/_upload`,AUTH_CODESPACE:`https://dominio.onrender.com/auth-codespace`,HEALTH:`https://dominio.onrender.com/_health`,ALL_ROUTES:`https://dominio.onrender.com/_all_routes`,TRANSPORT:`websocket`,TEST_MODE:!1};export{e as t};
