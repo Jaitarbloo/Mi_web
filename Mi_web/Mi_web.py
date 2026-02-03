@@ -13,6 +13,12 @@ from Componente_Reborde_llamativo import Reborde_llamativo
 from Componente_Doble_fondo import Doble_fondo
 from Componente_Contacto import Contacto
 from Componente_Web_construccion import Web_en_construccion
+from C_Desliza_fondo_fijo import Cabezera
+from C_Cambio_fotos_texto_Dcha import Compromiso_naturaleza_icono
+from C_Carrusel_foto_pequena import Carrusel_peque
+from C_Ubicacion import UbicacionFooter
+from C_Cuatro_fotos import El_Local
+
 
 class State(rx.State):
     pass
@@ -22,23 +28,33 @@ def index():
                     
                     navbar(),
 
-                    #Web_en_construccion(),
+                    Web_en_construccion(),
                   
                     Zabalgana_web_Vercel(),
+
+                    Cabezera(),
 
                     Ampliacion_fotos(),
         
                     Cambio_fondo(), 
 
                     Doble_fondo(),
+
+                    Compromiso_naturaleza_icono(),
         
                     Carrusel(),
         
                     Favicon_rotando(),
+
+                    El_Local(),
         
                     Cambio_imagen(),
+
+                    Carrusel_peque(),
         
                     Reborde_llamativo(),
+
+                    UbicacionFooter(),
 
                     Contacto(),
         
