@@ -8,8 +8,6 @@ from Componente_Favicon_rotando import Favicon_rotando
 from Componente_Navbar import navbar
 from Componente_Cambio_imagen import Cambio_imagen
 from Componente_Zabalgana_Web import Zabalgana_web_Vercel
-from Componente_Cambio_fondo import Cambio_fondo
-from Componente_Reborde_llamativo import Reborde_llamativo
 from Componente_Doble_fondo import Doble_fondo
 from Componente_Contacto import Contacto
 from Componente_Web_construccion import Web_en_construccion
@@ -18,6 +16,9 @@ from C_Cambio_fotos_texto_Dcha import Compromiso_naturaleza_icono
 from C_Carrusel_foto_pequena import Carrusel_peque
 from C_Ubicacion import UbicacionFooter
 from C_Cuatro_fotos import El_Local
+from C_Fondo_cambiante import Cambio_fondo1
+from C_Foto_con_reborde import Reborde_llamativo1
+from C_Ampliacion_dos_fotos import Ampliacion_fotos1
 
 
 class State(rx.State):
@@ -28,15 +29,17 @@ def index():
                     
                     navbar(),
 
-                    Web_en_construccion(),
+                    #Web_en_construccion(),
                   
                     Zabalgana_web_Vercel(),
 
                     Cabezera(),
 
                     Ampliacion_fotos(),
-        
-                    Cambio_fondo(), 
+
+                    #Ampliacion_fotos1(),
+
+                    Cambio_fondo1(), 
 
                     Doble_fondo(),
 
@@ -51,8 +54,8 @@ def index():
                     Cambio_imagen(),
 
                     Carrusel_peque(),
-        
-                    Reborde_llamativo(),
+
+                    Reborde_llamativo1(),
 
                     UbicacionFooter(),
 
@@ -64,6 +67,7 @@ def index():
                 #background_color="blue"
                 background_color="#1a1a2e",
                 padding="0px",
+                spacing="0"
                 
                 
                 )

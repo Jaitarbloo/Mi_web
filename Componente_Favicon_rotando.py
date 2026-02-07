@@ -45,9 +45,9 @@ def Favicon_rotando():
                 align="center",      
                 justify="center",    
                 height="100vh",
-                width="100vw", 
+                width="100%", 
                 background_color="blue",
-                padding="4em"
+                
                 )
 
 app = rx.App()
