@@ -1,4 +1,4 @@
-#IMPORTANTE.....activar todo este codigo con el comando......  .\buildfronted.ps1     
+#IMPORTANTE.....activar todo este codigo con el comando......          .\buildfronted.ps1
 
 
 
