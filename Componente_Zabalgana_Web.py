@@ -74,7 +74,7 @@ def Zabalgana_web_Vercel():
                 justify="center",
                 align="center",
                 width="100%",
-                margin_top="2em",
+                margin_top="7em",
                 bg="#1a1a2e"
                     )
 

@@ -19,6 +19,9 @@ from C_Cuatro_fotos import El_Local
 from C_Fondo_cambiante import Cambio_fondo1
 from C_Foto_con_reborde import Reborde_llamativo1
 from C_Ampliacion_dos_fotos import Ampliacion_fotos1
+from C_Navbar_trasparente import Navbar_trasparente
+from C_en_proceso import navbar_desplegable
+from C_en_proceso1 import Navbar_trasparente1
 
 
 class State(rx.State):
@@ -27,7 +30,13 @@ class State(rx.State):
 def index():
     return rx.vstack(
                     
-                    navbar(),
+                    #navbar(),
+
+                    #Navbar_trasparente(),
+
+                    #navbar_desplegable(),
+
+                    Navbar_trasparente1(),
 
                     #Web_en_construccion(),
                   
