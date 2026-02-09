@@ -10,7 +10,7 @@ class State(rx.State):
     def detener_favicon(self):
         self.favicon_rotando = False
 
-def Favicon_rotando():
+def Foto_rotando():
 
     return rx.vstack(
 
@@ -51,4 +51,4 @@ def Favicon_rotando():
                 )
 
 app = rx.App()
-app.add_page(Favicon_rotando, title="Favicon Rotando")
+app.add_page(Foto_rotando, title="Foto Rotando")

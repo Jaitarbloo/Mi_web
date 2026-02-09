@@ -5,7 +5,7 @@ from email.mime.text import MIMEText
 class State(rx.State):
     pass
 
-def Zabalgana_web_Vercel():
+def cabezera_fotos_textos():
     
     fotos = [
         {"src": "Reflex.png",                        "texto": "Con Reflex desarrollo aplicaciones web completas (frontend y backend), optimizando tanto tiempo de desarrollo como consistencia entre vistas estáticas y funcionalidades dinámicas."},
@@ -79,4 +79,4 @@ def Zabalgana_web_Vercel():
                     )
 
 app = rx.App()
-app.add_page(Zabalgana_web_Vercel, title="Zabalgana Web")
+app.add_page(cabezera_fotos_textos, title="Zabalgana Web")

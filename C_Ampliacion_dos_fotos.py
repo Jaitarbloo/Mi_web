@@ -14,7 +14,7 @@ class State(rx.State):
         self.expanded_bici = not self.expanded_bici
 
 
-def Ampliacion_fotos1():
+def Ampliacion_fotos():
     
     return rx.vstack( 
                     
@@ -67,4 +67,4 @@ def Ampliacion_fotos1():
                     )
 
 app = rx.App()
-app.add_page(Ampliacion_fotos1, title="Ampliacion_fotos")
+app.add_page(Ampliacion_fotos, title="Ampliacion_fotos")

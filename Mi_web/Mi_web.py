@@ -1,13 +1,10 @@
 import reflex as rx
 from rxconfig import config
 
-
-from Componente_Ampliacion_fotos import Ampliacion_fotos
 from Componente_Carrusel_fotos import Carrusel
-from Componente_Favicon_rotando import Favicon_rotando
+from C_Foto_rotando import Foto_rotando
 from Componente_Navbar import navbar
 from Componente_Cambio_imagen import Cambio_imagen
-from Componente_Zabalgana_Web import Zabalgana_web_Vercel
 from Componente_Doble_fondo import Doble_fondo
 from Componente_Contacto import Contacto
 from Componente_Web_construccion import Web_en_construccion
@@ -18,10 +15,11 @@ from C_Ubicacion import UbicacionFooter
 from C_Cuatro_fotos import El_Local
 from C_Fondo_cambiante import Cambio_fondo1
 from C_Foto_con_reborde import Reborde_llamativo1
-from C_Ampliacion_dos_fotos import Ampliacion_fotos1
+from C_Ampliacion_dos_fotos import Ampliacion_fotos
 from C_Navbar_trasparente import Navbar_trasparente
 from C_en_proceso import navbar_desplegable
 from C_en_proceso1 import Navbar_trasparente1
+from C_Cabezera_fotos_textos_abajo import cabezera_fotos_textos
 
 
 class State(rx.State):
@@ -40,13 +38,11 @@ def index():
 
                     #Web_en_construccion(),
                   
-                    Zabalgana_web_Vercel(),
+                    cabezera_fotos_textos(),
 
                     Cabezera(),
 
                     Ampliacion_fotos(),
-
-                    #Ampliacion_fotos1(),
 
                     Cambio_fondo1(), 
 
@@ -56,7 +52,7 @@ def index():
         
                     Carrusel(),
         
-                    Favicon_rotando(),
+                    Foto_rotando(),
 
                     El_Local(),
         
