@@ -3,10 +3,11 @@ import reflex as rx
 def Navbar_trasparente1() -> rx.Component:
     # Definimos los enlaces para evitar repetir código
     menu_items = [
-        ("Nuestra cocina", "https://reflex.dev"),
-        ("Queda aquí", "https://reflex.dev"),
-        ("Horarios y Eventos", "https://reflex.dev"),
-        ("Reserva tu mesa", "https://reflex.dev"),
+        ("Inicio", "https://reflex.dev"),
+        ("Sobre mi", "https://reflex.dev"),
+        ("Mis tecnologías", "https://reflex.dev"),
+        ("Componentes para tu web", "https://reflex.dev"),
+        ("Contacto", "https://reflex.dev"),
     ]
 
     return rx.vstack(
@@ -16,7 +17,7 @@ def Navbar_trasparente1() -> rx.Component:
                 rx.hstack(
                     *[
                         rx.link(
-                            rx.text(text, size="4", color="White", _hover={"opacity": 0.7}),
+                            rx.text(text, size="5", color="White", _hover={"opacity": 0.7}),
                             href=url
                         ) for text, url in menu_items
                     ],

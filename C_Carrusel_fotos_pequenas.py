@@ -1,7 +1,7 @@
 import reflex as rx
 
 
-def Carrusel_peque() -> rx.Component:
+def Carrusel_fotos_pequenas() -> rx.Component:
     slides = [
         ("bmw-publicidad.webp", "Cocina responsable", "Producto local y de temporada"),
         ("Entrada_principal_Barron.jpg", "Compromiso sostenible", "Reducimos residuos"),
@@ -62,5 +62,5 @@ def Carrusel_peque() -> rx.Component:
 
 
 app = rx.App()
-app.add_page(Carrusel_peque)
+app.add_page(Carrusel_fotos_pequenas, title="Carrusel de fotos pequeñas")
 

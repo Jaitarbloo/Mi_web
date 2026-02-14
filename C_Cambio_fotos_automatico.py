@@ -17,11 +17,11 @@ class CarruselState(rx.State):
 
 
 
-def Carrusel():
+def Cambio_fotos_automatico():
     
     return rx.vstack(
                     
-                    rx.text("Carrusel adaptable, pensado para captar la atención", align="center", width="100%", size="8"),
+                    rx.text("Componente cambio de fotos automático", align="center", width="100%", size="8"),
                     
                     rx.image(
                             src=CarruselState.imagenes[CarruselState.indice_actual],
@@ -44,6 +44,7 @@ def Carrusel():
                 )
 
 
-
+app = rx.App()
+app.add_page(Cambio_fotos_automatico, title="Cambio de fotos automático")
 
 

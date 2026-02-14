@@ -4,7 +4,7 @@ def Doble_fondo():
             
                 return rx.vstack(
 
-                                rx.text("Doble fondo, una forma de destacar el contenido",
+                                rx.text("Componente de doble fondo",
                                         align="center",
                                         width="100%",
                                         size="8",

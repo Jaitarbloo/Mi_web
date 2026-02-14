@@ -1,7 +1,7 @@
 import reflex as rx
 
 
-def Cabezera() -> rx.Component:
+def Desliza_fondo_fijo() -> rx.Component:
     return rx.box(
 
         # CONTENIDO
@@ -10,13 +10,13 @@ def Cabezera() -> rx.Component:
             # TEXTO IZQUIERDA
             rx.vstack(
                 rx.heading(
-                    "BAR BARRÓN",
+                    "INICIA TU WEB CON ESTE COMPONENTE",
                     size="9",
                     color="#f5f3ef",
                 ),
 
                 rx.text(
-                    "Tu punto de encuentro",
+                    "Componente de cabecera con fondo fijo",
                     size="6",
                     color="#f5f3ef",
                     margin_top="1rem",
@@ -83,4 +83,4 @@ def Cabezera() -> rx.Component:
 
 
 app = rx.App()
-app.add_page(Cabezera)
+app.add_page(Desliza_fondo_fijo)

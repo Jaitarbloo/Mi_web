@@ -14,11 +14,11 @@ class State(rx.State):
         self.expanded_bici = not self.expanded_bici
 
 
-def Ampliacion_fotos():
+def Ampliacion_dos_fotos():
     
     return rx.vstack( 
                     
-                    rx.text("Acércate a los detalles que marcan la diferencia",
+                    rx.text("Componente de ampliación de fotos al pasar el ratón por encima",
                             align="center",
                             width="100%",
                             size="8",
@@ -67,4 +67,4 @@ def Ampliacion_fotos():
                     )
 
 app = rx.App()
-app.add_page(Ampliacion_fotos, title="Ampliacion_fotos")
+app.add_page(Ampliacion_dos_fotos, title="Ampliacion_fotos")

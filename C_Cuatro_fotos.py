@@ -1,12 +1,12 @@
 import reflex as rx
 
 
-def El_Local() -> rx.Component:
+def Cuatro_fotos() -> rx.Component:
     return rx.box(
         rx.vstack(
             # TÍTULO
             rx.heading(
-                "Nuestro espacio",
+                "Componente qué muestra tu local",
                 size="7",
                 color="#4a3a32",
             ),
@@ -79,4 +79,4 @@ def El_Local() -> rx.Component:
 
 
 app = rx.App()
-app.add_page(El_Local)
+app.add_page(Cuatro_fotos)

@@ -1,10 +1,10 @@
 import reflex as rx
 
-def Reborde_llamativo1():
+def Foto_con_reborde():
     return rx.center(
                     
                     rx.vstack(
-                                rx.text( "Detalles luminosos que refuerzan el diseño sin saturar",
+                                rx.text( "Componente luminoso que refuerza el diseño sin saturar",
                                         align="center",
                                         width="100%",
                                         size="8",
@@ -39,4 +39,4 @@ def Reborde_llamativo1():
                         )
 
 app = rx.App()
-app.add_page(Reborde_llamativo1, title="Reborde Llamativo")
+app.add_page(Foto_con_reborde, title="Reborde Llamativo")

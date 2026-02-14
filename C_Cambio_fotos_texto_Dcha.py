@@ -1,6 +1,6 @@
 import reflex as rx
 
-def Compromiso_naturaleza_icono() -> rx.Component:
+def Cambio_fotos_texto_Dcha() -> rx.Component:
     return rx.box(
         rx.flex(
             # CONTENEDOR DE IMÁGENES (CAMBIO AUTOMÁTICO)
@@ -74,7 +74,7 @@ def Compromiso_naturaleza_icono() -> rx.Component:
                     margin_bottom="1rem",
                 ),
                 rx.heading(
-                    "Respeto por nuestro planeta",
+                    "Componentes naturales, compromiso con el planeta",
                     size="8",
                     text_align="center", # Centrado para móvil
                 ),
@@ -114,4 +114,4 @@ def Compromiso_naturaleza_icono() -> rx.Component:
     )
 
 app = rx.App()
-app.add_page(Compromiso_naturaleza_icono)
+app.add_page(Cambio_fotos_texto_Dcha)

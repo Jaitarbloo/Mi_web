@@ -14,7 +14,7 @@ def Foto_rotando():
 
     return rx.vstack(
 
-                        rx.text("Diseño en movimiento para una experiencia agradable",
+                        rx.text("Componente con foto rotando al pasar el cursor por encima",
                                 align="center",
                                 width="100%",
                                 size="8",

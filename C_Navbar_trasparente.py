@@ -11,19 +11,23 @@ def Navbar_trasparente() -> rx.Component:
                                         
                                                 rx.hstack(
                                                             rx.link(
-                                                                    rx.text("Nuestra cocina", size="7", color="White"),
+                                                                    rx.text("Inicio", size="7", color="White"),
                                                                 href="https://reflex.dev",
                                                                     ),
                                                             rx.link(
-                                                                    rx.text("Queda aquí", size="7", color="White"),
+                                                                    rx.text("Sobre mi", size="7", color="White"),
                                                                 href="https://reflex.dev",
                                                                     ),
                                                             rx.link(
-                                                                    rx.text("Horarios y Eventos", size="7", color="White"),
+                                                                    rx.text("Mis tecnologías", size="7", color="White"),
                                                                 href="https://reflex.dev",
                                                                     ),
                                                             rx.link(
-                                                                    rx.text("Reserva tu mesa", size="7", color="White"),
+                                                                    rx.text("Ejemplos", size="7", color="White"),
+                                                                href="https://reflex.dev",
+                                                                    ),
+                                                            rx.link(
+                                                                    rx.text("Contacto", size="7", color="White"),
                                                                 href="https://reflex.dev",
                                                                     ),
                             

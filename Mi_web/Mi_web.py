@@ -1,25 +1,29 @@
 import reflex as rx
 from rxconfig import config
 
-from Componente_Carrusel_fotos import Carrusel
-from C_Foto_rotando import Foto_rotando
-from Componente_Navbar import navbar
-from Componente_Cambio_imagen import Cambio_imagen
-from Componente_Doble_fondo import Doble_fondo
-from Componente_Contacto import Contacto
-from Componente_Web_construccion import Web_en_construccion
-from C_Desliza_fondo_fijo import Cabezera
-from C_Cambio_fotos_texto_Dcha import Compromiso_naturaleza_icono
-from C_Carrusel_foto_pequena import Carrusel_peque
-from C_Ubicacion import UbicacionFooter
-from C_Cuatro_fotos import El_Local
-from C_Fondo_cambiante import Cambio_fondo1
-from C_Foto_con_reborde import Reborde_llamativo1
-from C_Ampliacion_dos_fotos import Ampliacion_fotos
-from C_Navbar_trasparente import Navbar_trasparente
+from C_Ampliacion_dos_fotos import Ampliacion_dos_fotos
+from C_Cabezera_fotos_textos_abajo import cabezera_fotos_textos_abajo
+from C_Cambio_fotos_automatico import Cambio_fotos_automatico
+from C_Cambio_fotos_texto_Dcha import Cambio_fotos_texto_Dcha
+from C_Cambio_imagen_con_cursor import Cambio_imagen_con_cursor
+from C_Carrusel_fotos_grandes import Carrusel_fotos_grandes
+from C_Carrusel_fotos_pequenas import Carrusel_fotos_pequenas
+from C_Contacto import Contacto
+from C_Cuatro_fotos import Cuatro_fotos
+from C_Desliza_fondo_fijo import Desliza_fondo_fijo
+from C_Doble_fondo import Doble_fondo
+
 from C_en_proceso import navbar_desplegable
 from C_en_proceso1 import Navbar_trasparente1
-from C_Cabezera_fotos_textos_abajo import cabezera_fotos_textos
+
+from C_Fondo_cambiante import Fondo_cambiante
+from C_Foto_con_reborde import Foto_con_reborde
+from C_Foto_rotando import Foto_rotando
+from C_Fotos_textos_abajo_dos_botones import Fotos_textos_abajo_dos_botones
+from C_Navbar_trasparente import Navbar_trasparente
+from C_Navbar import navbar
+from C_Ubicacion import UbicacionFooter
+from C_Web_construccion import Web_en_construccion
 
 
 class State(rx.State):
@@ -38,29 +42,33 @@ def index():
 
                     #Web_en_construccion(),
                   
-                    cabezera_fotos_textos(),
+                    cabezera_fotos_textos_abajo(),
 
-                    Cabezera(),
+                    Desliza_fondo_fijo(),
 
-                    Ampliacion_fotos(),
+                    Ampliacion_dos_fotos(),
 
-                    Cambio_fondo1(), 
+                    Fondo_cambiante(), 
 
                     Doble_fondo(),
 
-                    Compromiso_naturaleza_icono(),
-        
-                    Carrusel(),
+                    Carrusel_fotos_grandes(),
+
+                    Cambio_fotos_texto_Dcha(),
+
+                    Cambio_fotos_automatico(),
+
+                    Fotos_textos_abajo_dos_botones(),
         
                     Foto_rotando(),
 
-                    El_Local(),
+                    Cuatro_fotos(),
         
-                    Cambio_imagen(),
+                    Cambio_imagen_con_cursor(),
 
-                    Carrusel_peque(),
+                    Carrusel_fotos_pequenas(),
 
-                    Reborde_llamativo1(),
+                    Foto_con_reborde(),
 
                     UbicacionFooter(),
 

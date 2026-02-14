@@ -5,7 +5,7 @@ from email.mime.text import MIMEText
 class State(rx.State):
     pass
 
-def cabezera_fotos_textos():
+def cabezera_fotos_textos_abajo():
     
     fotos = [
         {"src": "Reflex.png",                        "texto": "Con Reflex desarrollo aplicaciones web completas (frontend y backend), optimizando tanto tiempo de desarrollo como consistencia entre vistas estáticas y funcionalidades dinámicas."},
@@ -33,7 +33,7 @@ def cabezera_fotos_textos():
                                     margin_top="1em"
                                     ),
                             
-                                rx.heading("Tecnologías que utilizo", size="9", margin_top="1em"),
+                                rx.heading("Mis tecnologías", size="9", margin_top="2.5em"),
                                 
                                 rx.grid(
 
@@ -54,7 +54,7 @@ def cabezera_fotos_textos():
                                             justify="center",
                                             align="center",
                                             spacing="5",
-                                            margin_top="4em",
+                                            #margin_top="1em",
                                                 
                                                 ) for f in fotos
                                         ],
@@ -74,9 +74,9 @@ def cabezera_fotos_textos():
                 justify="center",
                 align="center",
                 width="100%",
-                margin_top="7em",
+                margin_top="4em",
                 bg="#1a1a2e"
                     )
 
 app = rx.App()
-app.add_page(cabezera_fotos_textos, title="Zabalgana Web")
+app.add_page(cabezera_fotos_textos_abajo, title="Zabalgana Web")

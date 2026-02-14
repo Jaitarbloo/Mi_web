@@ -13,11 +13,11 @@ class State(rx.State):
         self.image_src = "/629083.jpg" 
 
     ...
-def Cambio_imagen():
+def Cambio_imagen_con_cursor():
     
     return rx.vstack(
                     
-                    rx.text("Del estático al interactivo",
+                    rx.text("Componente cambio de imagen con cursor",
                             align="center",
                             width="100%",
                             size="8"
@@ -44,4 +44,4 @@ def Cambio_imagen():
                 )
 
 app = rx.App()
-app.add_page(Cambio_imagen, title="Cambio de Imagen")
+app.add_page(Cambio_imagen_con_cursor, title="Cambio de Imagen")

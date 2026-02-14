@@ -8,13 +8,13 @@ def UbicacionFooter() -> rx.Component:
             rx.hstack(
                 rx.vstack(
                     rx.heading(
-                        "Dónde estamos",
+                        "Componente de Ubicación",
                         size="8",
                         color="#f5f3ef",
                     ),
 
                     rx.text(
-                        "Restaurante Barrón",
+                        "Tu negocio anunciado aquí",
                         size="5",
                         font_weight="bold",
                         color="#f5f3ef",
