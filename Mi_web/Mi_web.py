@@ -42,9 +42,15 @@ def index():
                   
                     cabezera_fotos_textos_abajo(),
 
-                    One_Page(),
+                    rx.box(One_Page(),
+                            id="one_page",
+                            scroll_margin_top="120px"
+                          ),
 
-                    Presentacion_componentes(),
+                    rx.box(Presentacion_componentes(),
+                            id="componentes",
+                            scroll_margin_top="120px"
+                          ),
 
                     Desliza_fondo_fijo(),
 
@@ -74,7 +80,9 @@ def index():
 
                     UbicacionFooter(),
 
-                    Contacto(),
+                    rx.box( Contacto(),
+                            id="contacto",
+                          ),
         
                             
                 width="100%",
@@ -88,7 +96,7 @@ def index():
 
 
 
-app = rx.App  ( stylesheets=["/animation.css"])
+app = rx.App  ( )
 
 app.add_page(index, title="Jaitarbloo Full-stack developer")
 

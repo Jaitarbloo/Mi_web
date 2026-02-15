@@ -25,7 +25,7 @@ def Cambio_imagen_con_cursor():
                     
                     rx.image(
                         src=State.image_src,
-                        width=["95vw", "550px"],  # Más grande y responsivo
+                        width="100%" ,#"["95vw", "550px"],  # Más grande y responsivo
                         max_width="550px",
                         height="auto",
                         margin_bottom="1.5em",
