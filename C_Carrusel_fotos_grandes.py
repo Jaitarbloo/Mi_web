@@ -8,24 +8,24 @@ def Carrusel_fotos_grandes() -> rx.Component:
                                 rx.hstack(
             
                                         slide(  "bmw-publicidad.webp",
-                                                "Cocina responsable",
-                                                "Producto local y de temporada"),
+                                                "TU NEGOCIO AQUI",
+                                                "Tu mensaje aquí"),
             
                                         slide(  "Entrada_principal_Barron.jpg",
-                                                "Compromiso sostenible",
-                                                "Reducimos residuos y emisiones"),
+                                                "TU NEGOCIO AQUI",
+                                                "Tu mensaje aquí"),
             
                                         slide(  "giphy.gif",
-                                                "Personas primero",
-                                                "Respeto y condiciones justas"),
+                                                "TU NEGOCIO AQUI",
+                                                "Tu mensaje aquí"),
             
                                         slide(  "Pared_fondo_Barron.jpg",
-                                                "Menos desperdicio",
-                                                "Aprovechamos cada ingrediente"),
+                                                "TU NEGOCIO AQUI",
+                                                "Tu mensaje aquí"),
             
                                         slide(  "unnamed.jpg",
-                                                "Cuidar el planeta",
-                                                "También se sirve en la mesa"),
+                                                "TU NEGOCIO AQUI",
+                                                "Tu mensaje aquí"),
             
                                     
                                     width="100%",

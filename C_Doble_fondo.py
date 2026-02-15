@@ -30,7 +30,6 @@ def Doble_fondo():
                         align="center",      
                         justify="center",              
                         min_height="100vh",
-                        background_color="blue",
                         width="100%",
                         padding="2em"
                             )

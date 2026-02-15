@@ -3,11 +3,11 @@ import reflex as rx
 
 def Carrusel_fotos_pequenas() -> rx.Component:
     slides = [
-        ("bmw-publicidad.webp", "Cocina responsable", "Producto local y de temporada"),
-        ("Entrada_principal_Barron.jpg", "Compromiso sostenible", "Reducimos residuos"),
-        ("giphy.gif", "Personas primero", "Respeto y condiciones justas"),
-        ("Pared_fondo_Barron.jpg", "Menos desperdicio", "Aprovechamos todo"),
-        ("unnamed.jpg", "Cuidar el planeta", "También se sirve en la mesa"),
+        ("bmw-publicidad.webp", "TU NEGOCIO AQUI", "Tu mensaje aquí"),
+        ("Entrada_principal_Barron.jpg", "TU NEGOCIO AQUI", "Tu mensaje aquí"),
+        ("giphy.gif", "TU NEGOCIO AQUI", "Tu mensaje aquí"),
+        ("Pared_fondo_Barron.jpg", "TU NEGOCIO AQUI", "Tu mensaje aquí"),
+        ("unnamed.jpg", "TU NEGOCIO AQUI", "Tu mensaje aquí"),
     ]
 
     return rx.box(

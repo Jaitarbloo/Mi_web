@@ -64,8 +64,7 @@ def Contacto():
                 align="center",
                 width="100%",
                 height="60vh",
-                #margin_top="21em",
-                bg="#1a1a2e"
+                #margin_top="21em"
                     )
     
                 

@@ -46,7 +46,6 @@ def Foto_rotando():
                 justify="center",    
                 height="100vh",
                 width="100%", 
-                background_color="blue",
                 
                 )
 

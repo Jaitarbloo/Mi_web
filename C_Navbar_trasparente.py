@@ -1,69 +1,73 @@
 import reflex as rx
-from rxconfig import config
 
 def Navbar_trasparente() -> rx.Component:
-    
-                return rx.vstack(
-                                
-                                rx.center(
-                                        
-                                        rx.vstack(  # Este vstack contiene los enlaces y la línea, y su ancho se ajusta al contenido
-                                        
-                                                rx.hstack(
-                                                            rx.link(
-                                                                    rx.text("Inicio", size="7", color="White"),
-                                                                href="https://reflex.dev",
-                                                                    ),
-                                                            rx.link(
-                                                                    rx.text("Sobre mi", size="7", color="White"),
-                                                                href="https://reflex.dev",
-                                                                    ),
-                                                            rx.link(
-                                                                    rx.text("Mis tecnologías", size="7", color="White"),
-                                                                href="https://reflex.dev",
-                                                                    ),
-                                                            rx.link(
-                                                                    rx.text("Ejemplos", size="7", color="White"),
-                                                                href="https://reflex.dev",
-                                                                    ),
-                                                            rx.link(
-                                                                    rx.text("Contacto", size="7", color="White"),
-                                                                href="https://reflex.dev",
-                                                                    ),
-                            
-                                                    spacing="9",  # Espaciado entre los enlaces
-                                                    align="center", # Alinea los elementos verticalmente en el hstack
-                                                    
-                                                        ),
-                
-                                                rx.box(# La línea fina debajo de las palabras
-                                                        height="1px",
-                                                        width="100%",  # Ocupa el 100% del ancho de su contenedor padre (el rx.vstack con width="fit_content")
-                                                        bg="White", # Color de fondo cambiado a blanco sólido para mayor visibilidad
-                                                        margin_top="0.5em", # Pequeño margen para separar la línea del texto
-                                                        
-                                                        ),
-                
-                                            width="fit_content",  # Importante: Este vstack se ajusta al ancho de su contenido (los enlaces)
-                                            margin_x="auto",      # Asegura que este vstack esté centrado horizontalmente
-                                            spacing="0",  # Elimina el espacio vertical predeterminado entre el hstack y la línea
-                                            align="center",  # Centra los hijos (hstack y box) horizontalmente dentro de este vstack
-                                            height=rx.breakpoints(initial="60px", sm="80px", lg="100px"), # Altura total para el área de enlaces + línea
-                                            justify="center",  # Centra verticalmente el hstack y la línea dentro de la altura de este vstack
-                                                
-                                                ),
-                                    width="100%", # rx.center ocupa todo el ancho para poder centrar a su hijo
-        
-                                        ),
-        
-                            background="transparent", # Fondo transparente para todo el navbar
-                            position="fixed",  # Fija el navbar en la parte superior
-                            top="0",
-                            z_index="999",
-                            width="100%",
-                            spacing="0", # Elimina cualquier espaciado vertical adicional en el vstack principal
-                            
-                                )
+    # Definimos los enlaces para evitar repetir código
+    menu_items = [
+        ("Inicio", "https://reflex.dev"),
+        ("Sobre mi", "https://reflex.dev"),
+        ("Mis tecnologías", "https://reflex.dev"),
+        ("Componentes para tu web", "https://reflex.dev"),
+        ("Contacto", "https://reflex.dev"),
+    ]
 
-app = rx.App()
-app.add_page(Navbar_trasparente)
+    return rx.vstack(
+        rx.center(
+            # --- VERSIÓN ESCRITORIO ---
+            rx.vstack(
+                rx.hstack(
+                    *[
+                        rx.link(
+                            rx.text(text, size="5", color="White", _hover={"opacity": 0.7}),
+                            href=url
+                        ) for text, url in menu_items
+                    ],
+                    spacing="9",
+                    align="center",
+                    display=["none", "none", "none", "flex"], # Solo visible en pantallas grandes
+                ),
+                rx.box(
+                    height="1px",
+                    width="100%",
+                    bg="White",
+                    margin_top="0.5em",
+                    display=["none", "none", "none", "block"], # La línea también se oculta
+                ),
+                width="fit_content",
+                align="center",
+            ),
+
+            # --- VERSIÓN MÓVIL (Menú Desplegable) ---
+            rx.box(
+                rx.menu.root(
+                    rx.menu.trigger(
+                        rx.button(
+                            rx.icon("menu", color="white", size=30),
+                            variant="ghost", # Mantiene la transparencia
+                            cursor="pointer",
+                        )
+                    ),
+                    rx.menu.content(
+                        *[
+                            rx.menu.item(
+                                text, 
+                                on_click=rx.redirect(url),
+                                color_scheme="gray"
+                            ) for text, url in menu_items
+                        ],
+                        background_color="rgba(0, 0, 51, 0.9)", # Fondo oscuro semi-transparente para leer el menú
+                    ),
+                ),
+                display=["block", "block", "block", "none"], # Visible en móvil y tablet
+                padding="1em",
+            ),
+            width="100%",
+        ),
+        background="transparent",
+        position="fixed",
+        top="0",
+        z_index="999",
+        width="100%",
+        padding_top="1em",
+    )
+
+

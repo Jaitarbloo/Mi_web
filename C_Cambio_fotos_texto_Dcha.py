@@ -74,7 +74,7 @@ def Cambio_fotos_texto_Dcha() -> rx.Component:
                     margin_bottom="1rem",
                 ),
                 rx.heading(
-                    "Componentes naturales, compromiso con el planeta",
+                    "Ejemplo componente de compromiso con el planeta",
                     size="8",
                     text_align="center", # Centrado para móvil
                 ),
@@ -110,7 +110,7 @@ def Cambio_fotos_texto_Dcha() -> rx.Component:
             padding=["2rem 1rem", "4rem 2rem", "6rem 2rem"],
         ),
         width="100%",
-        background_color="#b9864b",
+        background_color="#d38832",
     )
 
 app = rx.App()

@@ -13,8 +13,8 @@ from C_Cuatro_fotos import Cuatro_fotos
 from C_Desliza_fondo_fijo import Desliza_fondo_fijo
 from C_Doble_fondo import Doble_fondo
 
-from C_en_proceso import navbar_desplegable
-from C_en_proceso1 import Navbar_trasparente1
+
+#from C_en_proceso import
 
 from C_Fondo_cambiante import Fondo_cambiante
 from C_Foto_con_reborde import Foto_con_reborde
@@ -22,6 +22,8 @@ from C_Foto_rotando import Foto_rotando
 from C_Fotos_textos_abajo_dos_botones import Fotos_textos_abajo_dos_botones
 from C_Navbar_trasparente import Navbar_trasparente
 from C_Navbar import navbar
+from C_One_Page import One_Page
+from C_Presentacion_componentes import Presentacion_componentes
 from C_Ubicacion import UbicacionFooter
 from C_Web_construccion import Web_en_construccion
 
@@ -34,15 +36,15 @@ def index():
                     
                     #navbar(),
 
-                    #Navbar_trasparente(),
-
-                    #navbar_desplegable(),
-
-                    Navbar_trasparente1(),
+                    Navbar_trasparente(),
 
                     #Web_en_construccion(),
                   
                     cabezera_fotos_textos_abajo(),
+
+                    One_Page(),
+
+                    Presentacion_componentes(),
 
                     Desliza_fondo_fijo(),
 
@@ -77,7 +79,6 @@ def index():
                             
                 width="100%",
                 min_height="100vh", 
-                #background_color="blue"
                 background_color="#1a1a2e",
                 padding="0px",
                 spacing="0"

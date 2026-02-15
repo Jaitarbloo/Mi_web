@@ -63,7 +63,6 @@ def Ampliacion_dos_fotos():
                 align="center",
                 width="100%",
                 min_height="100vh",
-                background_color="blue"
                     )
 
 app = rx.App()

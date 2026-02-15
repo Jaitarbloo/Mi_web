@@ -53,8 +53,7 @@ def cabezera_fotos_textos_abajo():
                                             
                                             justify="center",
                                             align="center",
-                                            spacing="5",
-                                            #margin_top="1em",
+                                            spacing="4"
                                                 
                                                 ) for f in fotos
                                         ],
@@ -75,7 +74,7 @@ def cabezera_fotos_textos_abajo():
                 align="center",
                 width="100%",
                 margin_top="4em",
-                bg="#1a1a2e"
+                
                     )
 
 app = rx.App()

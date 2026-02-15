@@ -34,7 +34,6 @@ def Foto_con_reborde():
                             ),
         
                 min_height="100vh",
-                background_color="blue",
                 width="100%"
                         )
 
