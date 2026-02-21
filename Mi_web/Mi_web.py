@@ -14,7 +14,8 @@ from C_Desliza_fondo_fijo import Desliza_fondo_fijo
 from C_Doble_fondo import Doble_fondo
 
 
-#from C_en_proceso import
+#from C_en_proceso import contacto_reducido
+
 
 from C_Fondo_cambiante import Fondo_cambiante
 from C_Foto_con_reborde import Foto_con_reborde
@@ -32,6 +33,7 @@ class State(rx.State):
     pass
 
 def index():
+    
     return rx.vstack(
                     
                     #navbar(),
@@ -40,7 +42,9 @@ def index():
 
                     #Web_en_construccion(),
                   
-                    cabezera_fotos_textos_abajo(),
+                    rx.box(cabezera_fotos_textos_abajo(),
+                            id="inicio",
+                         ),
 
                     rx.box(One_Page(),
                             id="one_page",
@@ -80,23 +84,27 @@ def index():
 
                     UbicacionFooter(),
 
-                    rx.box( Contacto(),
+                    rx.box(Contacto(),
                             id="contacto",
+                            scroll_margin_top="120px"
                           ),
+
+                   
         
                             
                 width="100%",
                 min_height="100vh", 
                 background_color="#1a1a2e",
-                padding="0px",
-                spacing="0"
+                spacing="0",
+                align="center"
+                
                 
                 
                 )
 
 
 
-app = rx.App  ( )
+app = rx.App ()
 
 app.add_page(index, title="Jaitarbloo Full-stack developer")
 

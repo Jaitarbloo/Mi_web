@@ -15,16 +15,18 @@ def Presentacion_componentes():
                                 rx.text("A continuación, vas a poder observar una serie de componentes que son totalmente "
                                         " independientes y adaptables para poder diseñar una web a tu media.  "
                                         " De esa forma, conseguiremos trasmitir a tus clientes el potencial de tu negocio.",
-                                        size="3"),
+                                        size="3",
+                                        text_align="center",),
 
                                width= "75%",
-                               align="center"),
+                               justify="center"),
 
                     align="center",
                     spacing="4",
                     #width="80%",
-                    padding="2.5em")
+                    padding="5em"),
 
-                        )
+                       
+                align="center") 
         
       

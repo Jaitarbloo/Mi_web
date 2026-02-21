@@ -31,41 +31,35 @@ def Contacto():
     
     return rx.center(
         
-                    rx.vstack(
-                            
-                                rx.divider(),
-        
+                    rx.vstack(  
                                 rx.heading("Contáctame", size="6"),
-        
-                                rx.form(
+
+                                rx.vstack(
+                                            rx.form(
                 
-                                        rx.vstack(
-                                                rx.input(placeholder="Tu nombre", name="nombre", required=True),
-                                                rx.input(placeholder="Tu email", name="email", required=True, type="email"),
-                                                rx.text_area(placeholder="¿En qué te puedo ayudar?", name="mensaje", required=True, rows="4"),
-                                                rx.button("Enviar", type="submit", color_scheme="indigo"),
-                                                 ),
+                                                    rx.vstack(
+                                                                rx.input(placeholder="Tu nombre", name="nombre", required=True),
+                                                                rx.input(placeholder="Tu email", name="email", required=True, type="email"),
+                                                                rx.text_area(placeholder="¿En qué te puedo ayudar?", name="mensaje", required=True, rows="4"),
+                                                                rx.button("Enviar", type="submit", color_scheme="indigo"),
+                                                              
+                                                            
+                                                                ),
                         
-                                    width="100%",
-                                    max_width="400px",
-                                    align="center",
-                                    on_submit=State.enviar_email,
-                                    reset_on_submit=True,
-                                     ),
+                                    
+                                                on_submit=State.enviar_email,
+                                                reset_on_submit=True,
+                                                width="100%",   
+                                                    ),
+
+                                ),
         
-                        spacing="4",
-                        padding="6em",
-                        align="center",
-                         
-                            ),
+                        
                 
-                spacing="4",
-                justify="center",
-                align="center",
-                width="100%",
-                height="60vh",
-                #margin_top="21em"
-                    )
+                        ),
+                
+                
+                    padding="2rem")
     
                 
 
