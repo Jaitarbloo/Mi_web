@@ -8,8 +8,8 @@ config = rx.Config(
         rx.plugins.TailwindV4Plugin(),
     ],
 
-     #api_url="https://mi-web-93ls.onrender.com", 
-     api_url="http://localhost:8000",
+     api_url="https://mi-web-93ls.onrender.com", 
+     #api_url="http://localhost:8000",
                    
                    cors_allowed_origins=["http://localhost:3000",
         

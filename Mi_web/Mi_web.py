@@ -14,7 +14,7 @@ from C_Desliza_fondo_fijo import Desliza_fondo_fijo
 from C_Doble_fondo import Doble_fondo
 
 
-#from C_en_proceso import contacto_reducido
+#from C_en_proceso import navbar_prueba
 
 
 from C_Fondo_cambiante import Fondo_cambiante
@@ -83,7 +83,7 @@ def index():
                     Foto_con_reborde(),
 
                     UbicacionFooter(),
-
+                    
                     rx.box(Contacto(),
                             id="contacto",
                             scroll_margin_top="120px"
