@@ -107,5 +107,5 @@ def index():
 
 app = rx.App (html_lang="es", stylesheets=["Estilos.css"])
 
-app.add_page(index, title="Jaitarbloo Full-stack developer")
+app.add_page(index, title="Jaitarbloo Full-stack developer", description="Especialista en desarrollo de webs One Page de alto impacto.")
 
