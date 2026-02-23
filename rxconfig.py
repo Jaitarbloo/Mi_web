@@ -2,7 +2,6 @@ import reflex as rx
 
 config = rx.Config(
     app_name="Mi_web",
-    html_lang="es",
     plugins=[
         rx.plugins.SitemapPlugin(),
         rx.plugins.TailwindV4Plugin(),

@@ -14,7 +14,7 @@ from C_Desliza_fondo_fijo import Desliza_fondo_fijo
 from C_Doble_fondo import Doble_fondo
 
 
-#from C_en_proceso import navbar_prueba
+#from C_en_proceso import
 
 
 from C_Fondo_cambiante import Fondo_cambiante
@@ -27,6 +27,7 @@ from C_One_Page import One_Page
 from C_Presentacion_componentes import Presentacion_componentes
 from C_Ubicacion import UbicacionFooter
 from C_Web_construccion import Web_en_construccion
+
 
 
 class State(rx.State):
@@ -60,7 +61,7 @@ def index():
 
                     Ampliacion_dos_fotos(),
 
-                    Fondo_cambiante(), 
+                    Fondo_cambiante(),
 
                     Doble_fondo(),
 
@@ -104,7 +105,7 @@ def index():
 
 
 
-app = rx.App ()
+app = rx.App (html_lang="es", stylesheets=["Estilos.css"])
 
 app.add_page(index, title="Jaitarbloo Full-stack developer")
 

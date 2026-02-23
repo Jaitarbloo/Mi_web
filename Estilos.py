@@ -27,3 +27,4 @@ hero_text_style = {
     "max_width": "90vw",
     "word_break": "break-word",
 }
+
