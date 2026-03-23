@@ -29,7 +29,7 @@ def Cuatro_fotos() -> rx.Component:
                     background_position="center",
                     width="60%",
                     height="420px",
-                    border_radius="xl",
+                    border_radius="10px",
                 ),
 
                 # FOTOS PEQUEÑAS
@@ -40,7 +40,7 @@ def Cuatro_fotos() -> rx.Component:
                         background_position="center",
                         width="100%",
                         height="200px",
-                        border_radius="xl",
+                        border_radius="10px",
                     ),
                     rx.box(
                         background_image="url('/Entrada_principal_Barron.jpg')",
@@ -48,7 +48,7 @@ def Cuatro_fotos() -> rx.Component:
                         background_position="center",
                         width="100%",
                         height="200px",
-                        border_radius="xl",
+                        border_radius="10px",
                     ),
                     rx.box(
                         background_image="url('/Pared_fondo_Barron.jpg')",
@@ -56,7 +56,7 @@ def Cuatro_fotos() -> rx.Component:
                         background_position="center",
                         width="100%",
                         height="200px",
-                        border_radius="xl",
+                        border_radius="10px",
                     ),
                     spacing="3",
                     width="40%",

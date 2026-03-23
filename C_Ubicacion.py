@@ -70,7 +70,7 @@ def UbicacionFooter() -> rx.Component:
                     ),
                     width="100%",
                     height="350px",
-                    border_radius="lg",
+                    #border_radius="10px",
                     overflow="hidden",
                 ),
 
