@@ -21,13 +21,13 @@ def UbicacionFooter() -> rx.Component:
                     ),
 
                     rx.text(
-                        "Calle Mayor 25, 28013 Madrid",
+                        "La dirección de tu negocio",
                         size="4",
                         color="#d8d2c8",
                     ),
 
                     rx.text(
-                        "Tel. 912 345 678",
+                        "Tel. 000000000",
                         size="4",
                         color="#d8d2c8",
                     ),
@@ -86,7 +86,7 @@ def UbicacionFooter() -> rx.Component:
 
             rx.hstack(
                 rx.text(
-                    "© 2025 Restaurante Barrón",
+                    "© 2025 Bar Restaurante",
                     size="3",
                     color="#d8d2c8",
                 ),

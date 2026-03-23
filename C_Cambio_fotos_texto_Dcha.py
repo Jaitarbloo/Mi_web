@@ -110,7 +110,7 @@ def Cambio_fotos_texto_Dcha() -> rx.Component:
             padding=["2rem 1rem", "4rem 2rem", "6rem 2rem"],
         ),
         width="100%",
-        background_color="#d38832",
+        background_color="#32d388",
     )
 
 app = rx.App()

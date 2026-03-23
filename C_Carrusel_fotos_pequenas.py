@@ -49,7 +49,7 @@ def Carrusel_fotos_pequenas() -> rx.Component:
         width="100%",
         overflow="hidden",
         padding_y=["2rem", "3rem", "4rem"],
-        background_color="#5b3a29",
+        background_color="#d38832",
 
         # CSS embebido
         sx={

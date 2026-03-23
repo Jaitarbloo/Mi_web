@@ -11,7 +11,7 @@ def One_Page():
                                 
                                 rx.center("Me especializo en crear webs One Page que van directo al grano: diseño un sitio profesional," 
                                         " claro y visual donde tus clientes encuentran todo lo que necesitan en un solo lugar. " 
-                                        "En solo un mes, tendrás una página optimizada que guía a tus visitas de forma natural para " 
+                                        "En sólo un mes, tendrás una página optimizada que guía a tus visitas de forma natural para " 
                                         "convertirlas en clientes potenciales, sin complicaciones ni esperas eternas.",
                                         width="75%",
                                         ),
@@ -22,14 +22,18 @@ def One_Page():
                                             rx.text("• Experiencia optimizada para móviles"),
                                             rx.text("• Desarrollo más rápido y controlado"),
                                             rx.text("• Ideal para captar clientes y presentar servicios"),
+                                            rx.link("• Ejemplo One Page", href="https://www.jaitarbloo.es")
+                                            
+                                                        
+                                                        ), 
                                             
                              
-                                    align="start"),
+                                  
             
                         
                             align="center"),
     
                 align="center",
                 width="100%",
-                padding="3em",)
+                padding="3em")
 

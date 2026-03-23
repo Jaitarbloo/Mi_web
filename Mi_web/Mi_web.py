@@ -8,7 +8,7 @@ from C_Cambio_fotos_texto_Dcha import Cambio_fotos_texto_Dcha
 from C_Cambio_imagen_con_cursor import Cambio_imagen_con_cursor
 from C_Carrusel_fotos_grandes import Carrusel_fotos_grandes
 from C_Carrusel_fotos_pequenas import Carrusel_fotos_pequenas
-from C_Contacto import Contacto
+from C_Contacto import Contactar
 from C_Cuatro_fotos import Cuatro_fotos
 from C_Desliza_fondo_fijo import Desliza_fondo_fijo
 from C_Doble_fondo import Doble_fondo
@@ -26,7 +26,8 @@ from C_Navbar import navbar
 from C_One_Page import One_Page
 from C_Presentacion_componentes import Presentacion_componentes
 from C_Ubicacion import UbicacionFooter
-from C_Web_construccion import Web_en_construccion
+#from C_Web_construccion import Web_en_construccion
+
 
 
 
@@ -85,9 +86,10 @@ def index():
 
                     UbicacionFooter(),
                     
-                    rx.box(Contacto(),
+                    rx.box(Contactar(),
                             id="contacto",
-                            scroll_margin_top="120px"
+                            scroll_margin_top="120px",
+                            width="100%",
                           ),
 
                    

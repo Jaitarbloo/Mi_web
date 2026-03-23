@@ -13,7 +13,7 @@ def Fondo_cambiante ():
                                 width="80%",
                                   ),
                 
-                background_color="#d38832",
+                background_color="#32bbd397",
                 width="100%"
                     )
     

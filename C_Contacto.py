@@ -1,67 +1,72 @@
 import reflex as rx
-import smtplib
-from email.mime.text import MIMEText
 
-class State(rx.State):
-    
-    def enviar_email(self, form_data: dict):
-        
-        try:
-            smtp_server = "smtp.gmail.com"
-            port = 587
-            sender_email = "tu_email@gmail.com"
-            password = "tu_contraseña_de_app"
-            
-            msg = MIMEText( f"Nombre: {form_data['nombre']}\nEmail: {form_data['email']}\nMensaje: {form_data['mensaje']}")
-            msg['Subject'] = 'Nuevo mensaje de contacto'
-            msg['From'] = sender_email
-            msg['To'] = sender_email
-            
-            with smtplib.SMTP(smtp_server, port) as server:
-                server.starttls()
-                server.login(sender_email, password)
-                server.send_message(msg)
-            return rx.window_alert("Mensaje enviado con éxito!")
-        
-        except Exception as e:
-            return rx.window_alert(f"Error al enviar el mensaje: {str(e)}")
+def Contactar() -> rx.Component:
+    return rx.box(
+        rx.vstack(
+            # TÍTULO
+            rx.heading(
+                "Contacto",
+                size="7",
+                color="#f5f3ef",
+            ),
 
+            # TEXTO DESCRIPTIVO
+            rx.text(
+                "¿Quieres qué te ayude a impulsar tu negocio?",
+                color="#d8d2c8",
+                text_align="center",
+                max_width="500px",
+            ),
 
-def Contacto():
-    
-    return rx.center(
-        
-                    rx.vstack(  
-                                rx.heading("Contáctame", size="6"),
+            # EMAIL DESTACADO
+            rx.link(
+                rx.text(
+                    "jaitarbloo@yahoo.es",
+                    font_size="1.2rem",
+                    font_weight="bold",
+                    color="#e6dccf",
+                ),
+                href="mailto:jaitarbloo@yahoo.es",
+                _hover={"color": "#ffffff"},
+            ),
 
-                                rx.vstack(
-                                            rx.form(
-                
-                                                    rx.vstack(
-                                                                rx.input(placeholder="Tu nombre", name="nombre", required=True),
-                                                                rx.input(placeholder="Tu email", name="email", required=True, type="email"),
-                                                                rx.text_area(placeholder="¿En qué te puedo ayudar?", name="mensaje", required=True, rows="4"),
-                                                                rx.button("Enviar", type="submit", color_scheme="indigo"),
-                                                              
-                                                            
-                                                                ),
-                        
-                                    
-                                                on_submit=State.enviar_email,
-                                                reset_on_submit=True,
-                                                width="100%",   
-                                                    ),
+            # BOTÓN OPCIONAL
+            rx.link(
+                rx.button(
+                    "Enviar email",
+                    bg_color="#e6dccf",
+                    color="#4a3a32",
+                    border_radius="full",
+                    padding_x="2rem",
+                    _hover={"bg_color": "#d2b48c"},
+                ),
+                href="mailto:jaitarbloo@yahoo.es",
+            ),
 
-                                ),
-        
-                        
-                
-                        ),
-                
-                
-                    padding="2rem")
-    
-                
+            # DIVISOR
+            rx.divider(
+                border_color="rgba(245,243,239,0.2)",
+                margin_y="2rem",
+                width="100%",
+            ),
+
+            # FOOTER INFERIOR
+            rx.text(
+                "© 2026 · Tu negocio",
+                size="2",
+                color="#d8d2c8",
+            ),
+
+            spacing="4",
+            align="center",
+            padding="4rem 2rem",
+            max_width="800px",
+            margin="0 auto",
+        ),
+        width="100%",
+        #background_color="#d38832",
+    )
+
 
 app = rx.App()
-app.add_page(Contacto, title="Contacto")
+app.add_page(Contactar)

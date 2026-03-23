@@ -74,7 +74,7 @@ def Cuatro_fotos() -> rx.Component:
         ),
 
         width="100%",
-        background_color="#d38832",
+        background_color="#6232d3",
     )
 
 
