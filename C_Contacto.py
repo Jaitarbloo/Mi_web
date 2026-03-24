@@ -21,12 +21,12 @@ def Contactar() -> rx.Component:
             # EMAIL DESTACADO
             rx.link(
                 rx.text(
-                    "jaitarbloo@yahoo.es",
+                    "jaitardev@gmail.com",
                     font_size="1.2rem",
                     font_weight="bold",
                     color="#e6dccf",
                 ),
-                href="mailto:jaitarbloo@yahoo.es",
+                href="jaitardev@gmail.com",
                 _hover={"color": "#ffffff"},
             ),
 
@@ -40,7 +40,7 @@ def Contactar() -> rx.Component:
                     padding_x="2rem",
                     _hover={"bg_color": "#d2b48c"},
                 ),
-                href="mailto:jaitarbloo@yahoo.es",
+                href="jaitardev@gmail.com",
             ),
 
             # DIVISOR
