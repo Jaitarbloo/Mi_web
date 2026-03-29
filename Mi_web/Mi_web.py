@@ -3,6 +3,7 @@ from rxconfig import config
 
 from C_Ampliacion_dos_fotos import Ampliacion_dos_fotos
 from C_Cabezera_fotos_textos_abajo import cabezera_fotos_textos_abajo
+from C_Foto_grande_texto_izq import foto_grande_texto_izq
 from C_Cambio_fotos_automatico import Cambio_fotos_automatico
 from C_Cambio_fotos_texto_Dcha import Cambio_fotos_texto_Dcha
 from C_Cambio_imagen_con_cursor import Cambio_imagen_con_cursor
@@ -61,6 +62,8 @@ def index():
                     Desliza_fondo_fijo(),
 
                     Ampliacion_dos_fotos(),
+
+                    foto_grande_texto_izq(),
 
                     Fondo_cambiante(),
 

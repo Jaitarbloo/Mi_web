@@ -24,9 +24,9 @@ def cabezera_fotos_textos_abajo():
                     
                     rx.vstack(
                             
-                                rx.heading("Desarrollador Web Fullstack", size="9"),
+                                rx.heading("Desarrollador Web", size="9"),
                                 
-                                rx.text( "Hola, mi nombre es Jaitarbloo y me dedico a la creación integral de páginas web.",
+                                rx.text( "Hola, formo parte de Jaitarbloo. Un proyecto que nació en 2023 con una misión clara, ayudar a los pequeños negocios a tener una web profesional sin complicaciones. Mi objetivo es que tu negocio tenga el espacio que le corresponde en intenet, con un trato cercano y eliminando costes innecesarios para ofrecerte la opción más económica.",
                                     size="5",
                                     align="center",
                                     width=rx.breakpoints(initial="95%", md="70%", lg="60%"),
