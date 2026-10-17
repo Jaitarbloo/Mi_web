@@ -72,5 +72,5 @@ def navbar() -> rx.Component:
             width="100%",
                 )
 
-app = rx.App()
-app.add_page(navbar, title="Componente Navbar")
+#app = rx.App()
+#app.add_page(navbar, title="Componente Navbar")

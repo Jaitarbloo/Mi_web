@@ -44,7 +44,7 @@ def Cambio_fotos_automatico():
                 )
 
 
-app = rx.App()
-app.add_page(Cambio_fotos_automatico, title="Cambio de fotos automático")
+#app = rx.App()
+#app.add_page(Cambio_fotos_automatico, title="Cambio de fotos automático")
 
 

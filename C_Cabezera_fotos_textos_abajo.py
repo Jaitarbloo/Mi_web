@@ -77,5 +77,5 @@ def cabezera_fotos_textos_abajo():
                 
                     )
 
-app = rx.App()
-app.add_page(cabezera_fotos_textos_abajo, title="Zabalgana Web")
+#app = rx.App()
+#app.add_page(cabezera_fotos_textos_abajo, title="Zabalgana Web")

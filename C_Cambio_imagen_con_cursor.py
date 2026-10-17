@@ -43,5 +43,5 @@ def Cambio_imagen_con_cursor():
 
                 )
 
-app = rx.App()
-app.add_page(Cambio_imagen_con_cursor, title="Cambio de Imagen")
+#app = rx.App()
+#app.add_page(Cambio_imagen_con_cursor, title="Cambio de Imagen")

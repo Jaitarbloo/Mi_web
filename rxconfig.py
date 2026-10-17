@@ -5,6 +5,7 @@ config = rx.Config(
     plugins=[
         rx.plugins.SitemapPlugin(),
         rx.plugins.TailwindV4Plugin(),
+        rx.plugins.RadixThemesPlugin()
     ],
 
      api_url="https://mi-web-93ls.onrender.com", 

@@ -37,5 +37,5 @@ def Foto_con_reborde():
                 width="100%"
                         )
 
-app = rx.App()
-app.add_page(Foto_con_reborde, title="Reborde Llamativo")
+#app = rx.App()
+#app.add_page(Foto_con_reborde, title="Reborde Llamativo")

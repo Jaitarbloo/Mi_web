@@ -68,5 +68,5 @@ def Contactar() -> rx.Component:
     )
 
 
-app = rx.App()
-app.add_page(Contactar)
+#app = rx.App()
+#app.add_page(Contactar)

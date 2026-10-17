@@ -65,5 +65,5 @@ def Ampliacion_dos_fotos():
                 min_height="100vh",
                     )
 
-app = rx.App()
-app.add_page(Ampliacion_dos_fotos, title="Ampliacion_fotos")
+#app = rx.App()
+#app.add_page(Ampliacion_dos_fotos, title="Ampliacion_fotos")

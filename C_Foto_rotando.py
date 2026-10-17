@@ -49,5 +49,5 @@ def Foto_rotando():
                 
                 )
 
-app = rx.App()
-app.add_page(Foto_rotando, title="Foto Rotando")
+#app = rx.App()
+#app.add_page(Foto_rotando, title="Foto Rotando")

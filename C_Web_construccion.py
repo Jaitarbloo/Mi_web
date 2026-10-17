@@ -25,5 +25,5 @@ def Web_en_construccion():
 
                                   )
 
-app = rx.App()
-app.add_page( Web_en_construccion, title="web_en_costrucción" )
+#app = rx.App()
+#app.add_page( Web_en_construccion, title="web_en_costrucción" )

@@ -100,5 +100,5 @@ def slide(image_url: str, title: str, subtitle: str) -> rx.Component:
 
  
 
-app = rx.App()
-app.add_page(Carrusel_fotos_grandes)
+#app = rx.App()
+#app.add_page(Carrusel_fotos_grandes)

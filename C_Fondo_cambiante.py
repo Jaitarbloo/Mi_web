@@ -20,5 +20,5 @@ def Fondo_cambiante ():
     
     
                 
-app = rx.App ()  
-app.add_page(Fondo_cambiante, title="Fondo cambiante")
+#app = rx.App ()  
+#app.add_page(Fondo_cambiante, title="Fondo cambiante")

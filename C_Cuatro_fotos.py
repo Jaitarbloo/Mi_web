@@ -78,5 +78,5 @@ def Cuatro_fotos() -> rx.Component:
     )
 
 
-app = rx.App()
-app.add_page(Cuatro_fotos)
+#app = rx.App()
+#app.add_page(Cuatro_fotos)

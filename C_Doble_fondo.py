@@ -36,5 +36,5 @@ def Doble_fondo():
                             
                             
 
-app = rx.App()
-app.add_page(Doble_fondo, title="Doble Fondo")
+#app = rx.App()
+#app.add_page(Doble_fondo, title="Doble Fondo")

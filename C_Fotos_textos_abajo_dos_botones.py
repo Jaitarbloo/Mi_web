@@ -143,5 +143,5 @@ def Fotos_textos_abajo_dos_botones() -> rx.Component:
     )
 
 
-app = rx.App()
-app.add_page(Fotos_textos_abajo_dos_botones, title="Fotos, textos abajo y dos botones")
+#app = rx.App()
+#app.add_page(Fotos_textos_abajo_dos_botones, title="Fotos, textos abajo y dos botones")

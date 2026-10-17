@@ -82,5 +82,5 @@ def Desliza_fondo_fijo() -> rx.Component:
     )
 
 
-app = rx.App()
-app.add_page(Desliza_fondo_fijo)
+#app = rx.App()
+#app.add_page(Desliza_fondo_fijo)

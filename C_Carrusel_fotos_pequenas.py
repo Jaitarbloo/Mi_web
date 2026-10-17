@@ -61,6 +61,6 @@ def Carrusel_fotos_pequenas() -> rx.Component:
     )
 
 
-app = rx.App()
-app.add_page(Carrusel_fotos_pequenas, title="Carrusel de fotos pequeñas")
+#app = rx.App()
+#app.add_page(Carrusel_fotos_pequenas, title="Carrusel de fotos pequeñas")
 

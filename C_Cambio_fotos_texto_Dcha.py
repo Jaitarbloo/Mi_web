@@ -113,5 +113,5 @@ def Cambio_fotos_texto_Dcha() -> rx.Component:
         background_color="#32d388",
     )
 
-app = rx.App()
-app.add_page(Cambio_fotos_texto_Dcha)
+#app = rx.App()
+#app.add_page(Cambio_fotos_texto_Dcha)
